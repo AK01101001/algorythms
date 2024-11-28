@@ -1,0 +1,35 @@
+﻿<Window x:Class="algorytms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:algorytms"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <UniformGrid>
+            <Label>poadaj 1-szą liczbę</Label>
+            <TextBox x:Name="pier" Width="400"></TextBox>
+
+            <Label>poadaj 2-gą liczbę</Label>
+            <TextBox x:Name="drug" Width="400"></TextBox>
+        </UniformGrid>
+
+
+
+        <UniformGrid Grid.Row="1">
+            <Button Click="silnia">silnia</Button>
+            <Button Click="nwd">nwd</Button>
+            <Button Click="potega">potęga nk</Button>
+            <Button Click="pierwsze">liczby pierwsze</Button>
+        </UniformGrid>
+
+    </Grid>
+</Window>
